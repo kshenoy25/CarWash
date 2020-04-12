@@ -76,13 +76,13 @@ public class CarWash {
             // Simulate the passage of one second of time.
             // Check whether a new customer has arrived.
             if (arrival.query( )) {
-                ////////////////////////////////////////////////////////////////////////////////////
-                // EVENT2 - EVERY - xth - customerBonus will be given special service for FREE
 
-
-                // If customerSecond is divisible by 5 will require special service
-                // else into normal queue
+                // Every 5th customer will be set up for special service
                 if ((currentSecond % 5 == 0) || (currentSecond % customerBonus == 0)){
+                    ////////////////////////////////////////////////////////////////////////////////////
+                    // EVENT2 - EVERY - 12th customer set by variable - customerBonus will be given special service for FREE
+                    // If customerSecond is divisible by 5 will require special service
+                    // else into normal queue
                     if(currentSecond % customerBonus == 0){
                         System.out.println("EVENT 2: Free special wash offer - " + currentSecond);
                     }
